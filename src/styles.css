@@ -1,0 +1,143 @@
+.App {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.y-axis path {
+  stroke: white;
+  stroke-opacity: 0%;
+}
+
+.x-axis path {
+  stroke: white;
+  stroke-opacity: 20%;
+}
+body {
+  background-color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+.header {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+h2 {
+  font-family: "IBM Plex Mono", monospace;
+  color: crimson;
+}
+h3 {
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+}
+
+.svgDiv {
+  width: 80%;
+  height: 80%;
+  margin-left: 200px;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: visible;
+}
+
+.roots {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 50px 150px;
+  padding-bottom: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0;
+  padding-bottom: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+}
+.nav-head{
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 5px;
+}
+.nav-item {
+  margin-bottom: 30px;
+  text-align: right;
+}
+.nav-item h5:hover {
+  color: crimson;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+}
+
+.bg-black {
+  background-color: rgba(10, 10, 10, 0.377);
+  border-right: 1px solid rgba(255, 255, 255, 0.137);
+}
+
+.borderBottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+}
